@@ -5,41 +5,42 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: "MAULOTO",
+      title: "ADMIRAL AI",
       description:
-        "Site d'annonces et d'achats de voitures développé avec Next.js. Plateforme complète pour la vente et l'achat de véhicules.",
-      image: "/car-marketplace.png",
-      technologies: ["Next.js", "React.js", "TanStack", "TypeScript"],
-      liveUrl: "#",
+        "This is a project I worked on as a Frontend Engineer at Admiral AI, where I developed a user-friendly interface for managing AI models and data.",
+      image: "/l5.png",
+      technologies: ["React.js", "TanStack", "TypeScript"],
+      liveUrl: "https://fa-preprod.l5fleet.com/login?from=https://fleetai-preprod.l5fleet.com/fleet-chat",
       githubUrl: "#",
     },
     {
-      title: "Alouer Platform",
+      title: "TRADUCT",
       description:
-        "Plateforme de location développée pour Yaknema SARL. Interface moderne et responsive pour la gestion des locations.",
-      image: "/rental-platform-website.png",
+        "A translation platform I built to help users to learn cameroon mothal tongue wi text and audio with ease.",
+      image: "/traduct.png",
       technologies: ["React.js", "JavaScript", "CSS", "Responsive Design"],
       liveUrl: "https://alouer.yaknema.com/fr/",
       githubUrl: "#",
     },
     {
-      title: "Avendre Platform",
-      description: "Site de vente en ligne avec interface utilisateur optimisée et expérience d'achat fluide.",
-      image: "/ecommerce-website-homepage.png",
-      technologies: ["React.js", "JavaScript", "HTML/CSS", "UX Design"],
-      liveUrl: "https://avendre.yaknema.com/",
+      title: "Hano",
+      description: "Template of Product Designer and UI/UX in Tokyo. Available in the RasenganJs framework showcase.",
+      image: "/hano.png",
+      technologies: ["Rasengan.js", "TypeScript"],
+      liveUrl: "https://www.hub.rasengan.dev/preview/rh_saas-hano",
       githubUrl: "#",
     },
     {
-      title: "Sophie Chatbot",
+      title: "MAULOTO",
       description:
-        "Chatbot intelligent pour faciliter l'achat de billets de voyage. Développé en collaboration avec une équipe internationale.",
-      image: "/travel-chatbot-interface.png",
-      technologies: ["JavaScript", "Chatbot API", "UI/UX", "Team Collaboration"],
+        "Car rental platform I built to help users to rent cars with ease.",
+      image: "/mauloto.png",
+      technologies: ["Nextjs", "TypeScript", "Tailwind CSS"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -57,23 +58,23 @@ export function ProjectsSection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="animate-fade-in-up hover:shadow-lg transition-all duration-300 group">
+            <Card key={index} className="animate-fade-in-up hover:shadow-lg transition-all duration-300 group pt-0">
               <div className="relative overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   width={500}
-                  height={300}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  height={400}
+                  className="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
               </div>
 
               <CardHeader>
                 <CardTitle className="font-sans text-xl">{project.title}</CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-2">
                 <p className="text-muted-foreground leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2">
@@ -85,11 +86,13 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="flex gap-4 pt-4">
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1 bg-transparent">
+                  <Link href={project.liveUrl} target="_blank" className={`flex-1`}>
+                      <Button size="sm" disabled={project.liveUrl === "#"} className={`w-full ${project.liveUrl === "#" ? "cursor-not-allowed" : "cursor-pointer"}`}>
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </Button>
+                  </Link>
+                  <Button variant="outline" disabled={project.githubUrl === "#"} size="sm" className={`flex-1 bg-transparent ${project.githubUrl === "#" ? "cursor-not-allowed" : "cursor-pointer"}`}>
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>

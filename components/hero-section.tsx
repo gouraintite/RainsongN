@@ -23,7 +23,7 @@ export function HeroSection() {
               <h1 className="text-4xl md:text-6xl font-bold font-sans text-foreground">
                 Hi, I'm <span className="text-primary ">Rainsong <span className="text-transparent bg-clip-text bg-gradient-to-br from-35% from-primary to-65% to-gray-900 dark:to-foreground">Ngoutsop</span></span>
               </h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">Software Developer</h2>
+              <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">Software Engineer</h2>
               <p className="text-lg text-foreground max-w-2xl leading-relaxed">
                 I am a software developer with over four years of experience in building interactive websites.
                 I enjoy working in a team, solving problems, and constantly finding ways to grow and learn.

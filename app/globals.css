@@ -172,6 +172,7 @@
 .skill-card {
   background: transparent;
   border: 2px dashed !important;
+  border-color: gray !important;
   border-radius: 12px;
   padding: 20px;
   display: flex;

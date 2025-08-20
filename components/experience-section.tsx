@@ -11,7 +11,7 @@ interface Experience {
   company: string
   location: string
   period: string
-  type: "work" | "internship"
+  type: "work" | "internship" | "internship --> work"
   description: string
   technologies: string[]
   logo: string
@@ -27,81 +27,107 @@ export function ExperienceSection() {
 
   const experiences: Experience[] = [
     {
-      title: "Développeur Logiciel",
+      title: "Software Engineer",
       company: "Level 5 Fleet",
       location: "Canada (Remote)",
-      period: "Jan 2025 - Juin 2025",
+      period: "Jan 2025 - June 2025",
       type: "work",
       description:
-        "Mise en place des canaux de communication (tableaux de bord) pour la gestion de flottes avec des systèmes IoT embarqués.",
-      technologies: ["React.js", "TypeScript", "Dashboard Development"],
+        "Implementation of communication channels (dashboards) for fleet management with embedded IoT systems.",
+      technologies: ["React.js", "React Native", "TypeScript",  "Figma", "Embedded(C, python)", "IoT", "BLE", "SCRUM(Jira, confluence, Bitbucket...)", "AWS (Cognito, S3, DynamoDB, cloudwatch...)"],
       logo: "/logos/l5.png",
       detailedDescription:
-        "Level5fleet est une société qui permet de sécuriser des engins (tracteurs, containers, camions, etc.) à distance et de contrôler des flottes grâce à des systèmes IOT embarqués. Mon travail consiste à mettre en place les canaux de communication (tableaux de bord permettant aux utilisateurs de gérer efficacement leur matériel) en respectant les figma designs existants.",
+        "Level5fleet is a company that enables remote security for vehicles (tractors, containers, trucks, etc.) and fleet management using onboard IoT systems. \n\n My work initially consisted of setting up, maintaining, and monitoring communication channels (dashboards) for fleet management with embedded IoT systems. I worked on maintaining and improving the existing system. I then worked on a new service, “Admiral AI,” which aimed to offer users an AI tool specific to the system. I subsequently had to add UI/UX tasks to my responsibilities when the company's lead designer was on leave. After that, I switched completely to mobile with React Native and embedded systems. With a mobile app that communicated directly with ESP-IDF IoT devices, I had to quickly jump in, maintain the existing work, and move it forward, thus becoming the company's Mobile Lead. It wasn't easy to adapt because events were happening so quickly. But I'm proud to have given it my all and to have worked at L5.",
       achievements: [
-        "Développement de tableaux de bord IoT pour la gestion de flottes",
-        "Intégration de systèmes de sécurité à distance",
-        "Respect des designs Figma existants",
-        "Communication bilingue français/anglais",
+       "Maintenance of IoT dashboards for fleet management",
+        "Embedded systems work with ESP-IDF (C, Python) and BLE (Bluetooth Low Energy)",
+        "Leadership in mobile development and team management",
+        "Collaboration in a remote team using SCRUM methodologies (Jira, Confluence, Bitbucket, etc.)",
+        "Implementation of the front end of an AI service",
+        "Management of the Mobile iOS/Android department",
+        "Working with physical IoT equipment",
+        "Use of the AWS console",
+        "Designing UI/UX Figma designs for web and mobile",
+        "Communication entirely in English (meetings, oral reports, Confluence, etc.)",
       ],
       websiteUrl: "https://level5fleet.com",
     },
     {
-      title: "Développeur Front-end",
+      title: "Front-end Developer",
       company: "CODING INDUSTRY",
-      location: "Cameroun (Remote)",
+      location: "Cameroon (Remote)",
       period: "2021-2023",
       type: "work",
       description:
-        "Principal développeur front-end, création de MAULOTO (site d'annonces automobiles). Approfondissement des connaissances Next.js et TanStack.",
-      technologies: ["Next.js", "TanStack", "React.js"],
+        "Lead front-end developer, creation of MAULOTO (car classifieds website). Deepened knowledge of Next.js and TanStack.",
+      technologies: ["Next.js", "TanStack", "React.js",  "TypeScript",],
       logo: "/logos/ci.png",
       detailedDescription:
-        "En tant que principal développeur front-end, j'ai été amené à travailler sous pression. J'ai utilisé Next.js et ma fierté a été MAULOTO, un site d'annonces et/ou d'achats de voitures. C'est là que j'ai approfondi mes connaissances sur Next.js et TanStack.",
+        "As the lead front-end developer, I was tasked with working under pressure. I used Next.js and my pride was MAULOTO, a car classifieds website. This is where I deepened my knowledge of Next.js and TanStack.",
       achievements: [
-        "Développement complet de MAULOTO (plateforme d'annonces automobiles)",
-        "Maîtrise avancée de Next.js et TanStack Query",
-        "Gestion de projets sous pression",
-        "Architecture front-end scalable",
+        "Development of MAULOTO through to deployment management (automotive advertising platform)",
+        "Advanced mastery of Next.js and TanStack Query",
+        "Project management under pressure",
+        "Scalable front-end architecture",
       ],
       projectLinks: [{ name: "MAULOTO", url: "https://mauloto.com" }],
     },
     {
-      title: "Développeur Front-end et UX Design",
-      company: "ACESY Cameroun",
-      location: "Cameroun",
-      period: "Jan - Jun 2022",
+      title: "Front-end Developer and UX Design",
+      company: "ACESY Cameroon",
+      location: "Cameroon",
+      period: "Jan - June 2022",
       type: "internship",
       description:
-        "Amélioration de sites web existants avec React.js, conception d'interfaces UX avec Figma, travail en équipe avec méthodologie SCRUM.",
+        "Enhancement of existing websites using React.js, UX interface design with Figma, teamwork with SCRUM methodology.",
       technologies: ["React.js", "Figma", "UX Design", "SCRUM"],
       logo: "/logos/acesy.png",
       detailedDescription:
-        "Au cours de ce stage, j'ai amélioré des sites web existants en utilisant React.js. J'ai également conçu des interfaces utilisateur UX avec Figma, en veillant à ce qu'elles soient toutes deux intuitives. En outre, j'ai acquis une expérience précieuse en travaillant dans un environnement d'équipe collaboratif en appliquant les techniques de gestion de projet SCRUM.",
+        "During this internship, I improved existing websites using React.js. I also designed UX user interfaces with Figma, ensuring they were both intuitive. Additionally, I gained valuable experience working in a collaborative team environment by applying SCRUM project management techniques.",
       achievements: [
-        "Amélioration de sites web existants avec React.js",
-        "Conception d'interfaces UX intuitives avec Figma",
-        "Application de la méthodologie SCRUM",
-        "Travail collaboratif en équipe",
+        "Enhancement of existing websites using React.js",
+        "Design of intuitive UX interfaces with Figma",
+        "Application of SCRUM methodology",
+        "Collaborative teamwork",
       ],
     },
     {
-      title: "Stage en Front-end",
+      title: "Front-end Developer",
       company: "LOHCE",
-      location: "Cameroun",
-      period: "Avr - Mai 2022",
-      type: "internship",
+      location: "Cameroon",
+      period: "April - May 2022",
+      type: "internship --> work",
       description:
-        "Conception d'un chatbot 'Sophie' pour faciliter l'achat de billets de voyage, travail collaboratif avec équipe répartie.",
-      technologies: ["Chatbot Development", "JavaScript", "Team Collaboration"],
+        "Conception of a chatbot 'Sophie' to facilitate the purchase of travel tickets, collaborative work with a distributed team.",
+      technologies: ["Chatbot Development", "JavaScript",  "TypeScript","Team Collaboration"],
       logo: "/logos/lohce.png",
       detailedDescription:
-        "Avec 10 stagiaires répartis dans 3 villes du Cameroun et le coordinateur basé en France, notre objectif était de concevoir un chatbot 'Sophie' qui faciliterait le processus d'achat d'un billet de voyage. Ce projet m'a permis de développer mes compétences en développement collaboratif à distance.",
+        "With 10 interns spread across 3 cities in Cameroon and the coordinator based in France, our goal was to design a chatbot 'Sophie' that would facilitate the process of purchasing a travel ticket. This project allowed me to develop my skills in collaborative remote development.",
       achievements: [
-        "Développement du chatbot 'Sophie' pour l'achat de billets",
-        "Collaboration avec équipe distribuée (3 villes + France)",
-        "Gestion de projet à distance",
-        "Amélioration des processus d'achat en ligne",
+        "DDevelopment of the chatbot 'Sophie' for purchasing tickets",
+        "Collaboration with a distributed team (3 cities + France)",
+        "Remote project management",
+        "Improvement of online purchasing processes",
+      ],
+    },
+    {
+      title: "Front-end Developer",
+      company: "YAKNEMA",
+      location: "Cameroon",
+      period: "July - May 2023",
+      type: "internship --> work",
+      description:
+        "Improved my knowledge of HTML, CSS, JavaScript, Created tailored and responsive products for training.",
+      technologies: ["React js", "JavaScript", "Team Collaboration"],
+      logo: "/logos/yaknema.png",
+      detailedDescription:
+        "Learned and worked on ReactJs. Worked on the creation and launch of websites such as: Alouer: (https://alouer.yaknema.com/fr/) Avendre: (https://avendre.yaknema.com/).",
+      achievements: [
+        "Improved knowledge of HTML, CSS, JavaScript",
+        "Created tailored and responsive products for training",
+        "Learned and worked on ReactJs",
+        "Contributed to the creation and launch of websites",
+        "Was in charge of next interns and trainees",
       ],
     },
   ]
@@ -155,7 +181,8 @@ export function ExperienceSection() {
                               : "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
                           }`}
                         >
-                          {exp.type === "internship" ? "Internship" : "Work"}
+                          
+                          {exp.type === "internship --> work" ? "Internship --> Work": exp.type === "internship" ? "Internship" : "Work"}
                         </Badge>
                       </div>
                       <p className="text-lg font-medium text-primary">{exp.company}</p>
@@ -193,7 +220,7 @@ export function ExperienceSection() {
                     onClick={() => openDrawer(exp)}
                     className="group/btn hover:bg-primary hover:text-primary-foreground dark:hover:bg-primary-foreground dark:hover:text-primary transition-all duration-300"
                   >
-                    More
+                    See More
                     <ChevronRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </div>
@@ -206,7 +233,7 @@ export function ExperienceSection() {
       {isDrawerOpen && (
         <div className="fixed inset-0 z-50 flex">
           {/* Overlay */}
-          <div className="flex-1 bg-black/50 backdrop-blur-sm" onClick={closeDrawer} />
+          <div className="flex-1 bg-black/30 backdrop-blur-xs" onClick={closeDrawer} />
 
           {/* Drawer */}
           <div
@@ -262,7 +289,7 @@ export function ExperienceSection() {
                             : "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
                         }`}
                       >
-                        {selectedExperience.type === "internship" ? "Internship" : "Work"}
+                        {selectedExperience.type === "internship --> work" ? "Internship --> Work": selectedExperience.type === "internship" ? "Internship" : "Work"}
                       </Badge>
                     </div>
                   </div>

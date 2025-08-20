@@ -20,8 +20,7 @@ export function ContactSection() {
             <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold font-sans mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Je suis toujours ouvert aux nouvelles opportunités et collaborations. N'hésitez pas à me contacter pour
-                discuter de vos projets ou simplement pour échanger.
+                I am always open to new opportunities and collaborations. Please feel free to contact me to discuss your projects or simply to exchange ideas.
               </p>
             </div>
 
@@ -32,7 +31,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">kfirjdidjridjdjd@gmail.com</p>
+                  <p className="text-muted-foreground">ngoutsoprainsong@gmail.com</p>
                 </div>
               </div>
 
@@ -42,7 +41,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <p className="text-muted-foreground">linkedin.com/in/Rainsong-ganger</p>
+                  <p className="text-muted-foreground"> Ngoutsop Rainsong</p>
                 </div>
               </div>
 
@@ -52,7 +51,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Twitter</p>
-                  <p className="text-muted-foreground">@Rainsong_ganger</p>
+                  <p className="text-muted-foreground">@devhunter254</p>
                 </div>
               </div>
 
@@ -62,7 +61,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">GitHub</p>
-                  <p className="text-muted-foreground">github.com/Rainsong-ganger</p>
+                  <p className="text-muted-foreground">github.com/gouraintite</p>
                 </div>
               </div>
             </div>

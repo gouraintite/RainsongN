@@ -27,7 +27,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="bg-muted/30 py-8">
           <div className="container mx-auto px-6 text-center">
-            <p className="text-muted-foreground">© 2025 Rainsong Ngoutsop. Made With Care.</p>
+            <p className="text-muted-foreground">© 2025 Rainsong Ngoutsop. Made With Care and 🫶🏽.</p>
           </div>
         </footer>
       </main>
