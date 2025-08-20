@@ -34,7 +34,7 @@ export function ExperienceSection() {
       type: "work",
       description:
         "Implementation of communication channels (dashboards) for fleet management with embedded IoT systems.",
-      technologies: ["React.js", "React Native", "TypeScript",  "Figma", "Embedded(C, python)", "IoT", "BLE", "SCRUM(Jira, confluence, Bitbucket...)", "AWS (Cognito, S3, DynamoDB, cloudwatch...)"],
+      technologies: ["React.js", "React Native", "TypeScript",  "Figma", "Embedded(C, python)", "BLE", "SCRUM(Jira, confluence, Bitbucket...)", "AWS (Cognito, S3, DynamoDB, cloudwatch...)"],
       logo: "/logos/l5.png",
       detailedDescription:
         "Level5fleet is a company that enables remote security for vehicles (tractors, containers, trucks, etc.) and fleet management using onboard IoT systems. \n\n My work initially consisted of setting up, maintaining, and monitoring communication channels (dashboards) for fleet management with embedded IoT systems. I worked on maintaining and improving the existing system. I then worked on a new service, “Admiral AI,” which aimed to offer users an AI tool specific to the system. I subsequently had to add UI/UX tasks to my responsibilities when the company's lead designer was on leave. After that, I switched completely to mobile with React Native and embedded systems. With a mobile app that communicated directly with ESP-IDF IoT devices, I had to quickly jump in, maintain the existing work, and move it forward, thus becoming the company's Mobile Lead. It wasn't easy to adapt because events were happening so quickly. But I'm proud to have given it my all and to have worked at L5.",
@@ -73,7 +73,7 @@ export function ExperienceSection() {
       projectLinks: [{ name: "MAULOTO", url: "https://mauloto.com" }],
     },
     {
-      title: "Front-end Developer and UX Design",
+      title: "Front-end Dev and UX Design",
       company: "ACESY Cameroon",
       location: "Cameroon",
       period: "Jan - June 2022",

@@ -17,19 +17,19 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
-  title: "Rainsong Ngoutsop - Software Developer",
+  title: "Rainsong Ngoutsop - Software Engineer",
   description:
-    "Professional portfolio of Rainsong Ngoutsop, a software developer with expertise in React.js, TypeScript, and modern web technologies.",
+    "Professional portfolio of Rainsong Ngoutsop, a software engineer with expertise in React.js, TypeScript, and modern web technologies.",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.ico",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
 
   openGraph: {
-    title: "Rainsong Ngoutsop - Software Developer",
+    title: "Rainsong Ngoutsop - Software Engineer",
     description:
-      "Professional portfolio of Rainsong Ngoutsop, a software developer with expertise in React.js, TypeScript, and modern web technologies.",
+      "Professional portfolio of Rainsong Ngoutsop, a software engineer with expertise in React.js, TypeScript, and modern web technologies.",
     url: "https://rainsong-portfolio.vercel.app",
     siteName: "Rainsong Ngoutsop",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Rainsong Ngoutsop - Software Developer",
+        alt: "Rainsong Ngoutsop - Software Engineer",
       },
     ],
     locale: "en_US",
@@ -45,12 +45,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rainsong Ngoutsop - Software Developer",
+    title: "Rainsong Ngoutsop - Software Engineer",
     description:
-      "Professional portfolio of Rainsong Ngoutsop, a software developer with expertise in React.js, TypeScript, and modern web technologies.",
+      "Professional portfolio of Rainsong Ngoutsop, a software engineer with expertise in React.js, TypeScript, and modern web technologies.",
     images: ["/logo.png"],
   },
-
 }
 
 export default function RootLayout({

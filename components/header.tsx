@@ -27,7 +27,7 @@ export function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-auto h-auto rounded-full flex items-center justify-center">
+            <div className="w-32 h-11 rounded-full flex items-center justify-center">
               <Image
                   src="/logo.png"
                   alt="Rainsong Ngoutsop"
@@ -35,7 +35,7 @@ export function Header() {
                   height={300}
                   className="w-full h-full object-cover"
                   priority
-                              />
+                />
             </div>
           </div>
 

@@ -1,7 +1,8 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, Github, Linkedin, Twitter, ExternalLink } from "lucide-react"
+import Link from "next/link"
 
 export function ContactSection() {
   return (
@@ -25,7 +26,7 @@ export function ContactSection() {
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
+              <Link href="mailto:ngoutsoprainsong@gmail.com" target="_blank" className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
@@ -33,9 +34,12 @@ export function ContactSection() {
                   <p className="font-medium">Email</p>
                   <p className="text-muted-foreground">ngoutsoprainsong@gmail.com</p>
                 </div>
-              </div>
+                <div className="fixed right-0">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                </div>
+              </Link>
 
-              <div className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
+              <Link href="https://www.linkedin.com/in/rainsong-ngoutsop-25421a215/" target="_blank" className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Linkedin className="w-5 h-5 text-primary" />
                 </div>
@@ -43,9 +47,12 @@ export function ContactSection() {
                   <p className="font-medium">LinkedIn</p>
                   <p className="text-muted-foreground"> Ngoutsop Rainsong</p>
                 </div>
-              </div>
+                <div className="fixed right-0">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                </div>
+              </Link>
 
-              <div className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
+              <Link href="https://twitter.com/devhunter254" target="_blank" className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Twitter className="w-5 h-5 text-primary" />
                 </div>
@@ -53,9 +60,12 @@ export function ContactSection() {
                   <p className="font-medium">Twitter</p>
                   <p className="text-muted-foreground">@devhunter254</p>
                 </div>
-              </div>
+                <div className="fixed right-0">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                </div>
+              </Link>
 
-              <div className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
+              <Link href="https://github.com/gouraintite" target="_blank" className="flex items-center space-x-4 group hover:translate-x-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Github className="w-5 h-5 text-primary" />
                 </div>
@@ -63,7 +73,10 @@ export function ContactSection() {
                   <p className="font-medium">GitHub</p>
                   <p className="text-muted-foreground">github.com/gouraintite</p>
                 </div>
-              </div>
+                <div className="fixed right-0">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                </div>
+              </Link>
             </div>
           </div>
 

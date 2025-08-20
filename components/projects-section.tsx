@@ -24,7 +24,7 @@ export function ProjectsSection() {
         "A translation platform I built to help users to learn cameroon mothal tongue wi text and audio with ease.",
       image: "/traduct.png",
       technologies: ["React.js", "JavaScript", "CSS", "Responsive Design"],
-      liveUrl: "https://alouer.yaknema.com/fr/",
+      liveUrl: "https://traduct-s8kx-hygj41hqb-rainsongs-projects.vercel.app/",
       githubUrl: "#",
     },
     {
@@ -47,7 +47,7 @@ export function ProjectsSection() {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-sans text-foreground mb-4">Featured Projects</h2>

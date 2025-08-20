@@ -11,12 +11,12 @@ export function SkillsSection() {
     { name: "JavaScript", icon: "/logos/JavaScript.png", color: "#F7DF1E" },
     { name: "TypeScript", icon: "/logos/TypeScript.png", color: "#3178C6" },
     { name: "Sass", icon: "/logos/Sass.png", color: "#CC6699" },
-  ]
-
-  const toolsSkills = [
     { name: "Tailwind css", icon: "/logos/Tailwind.png", color: "#06B6D4" },
     { name: "React js/native", icon: "/logos/React.png", color: "#61DAFB" },
     { name: "Rasengan js", icon: "/logos/Rasengan.png", color: "#61DAFB" },
+  ]
+
+  const toolsSkills = [
     { name: "Next js", icon: "/logos/Next.png", color: "#000000" },
     { name: "Node js", icon: "/logos/Node.png", color: "#339933" },
     { name: "Express js", icon: "/logos/Express.png", color: "#339933" },
@@ -48,59 +48,45 @@ export function SkillsSection() {
             <h3 className="text-xl font-semibold text-primary mb-6 border-b border-primary/30 pb-2">
               Front-end Stack
             </h3>
-            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {frontendSkills.map((skill, index) => (
-                <div key={index} className="skill-card">
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={skill.icon || "/placeholder.svg"}
-                        width={16}
-                        height={16}
-                        alt={`${skill.icon} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
-                    </div>
-                  </div>
-                  <span className="skill-name">{skill.name}</span>
-                </div>
-              ))}
-            </div> */}
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {frameworkSkills.map((skill, index) => (
               <div key={index} className="skill-card">
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={skill.icon || "/placeholder.svg"}
-                        width={16}
-                        height={16}
-                        alt={`${skill.icon} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
-                    </div>
+                <div className="skill-icon" style={{ color: skill.color }}>
+                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
+                    <Image
+                      src={skill.icon || "/placeholder.svg"}
+                      width={16}
+                      height={16}
+                      alt={`${skill.icon} logo`}
+                      className="w-full h-full object-contain p-1"
+                    />
                   </div>
+                </div>
                 <span className="skill-name">{skill.name}</span>
               </div>
             ))}
           </div>
+          </div>
+
+          <h3 className="text-xl font-semibold text-primary mb-6 border-b border-primary/30 pb-2">
+            Backend-end Stack
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {toolsSkills.map((skill, index) => (
               <div key={index} className="skill-card">
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={skill.icon || "/placeholder.svg"}
-                        width={16}
-                        height={16}
-                        alt={`${skill.icon} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
-                    </div>
+                <div className="skill-icon" style={{ color: skill.color }}>
+                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
+                    <Image
+                      src={skill.icon || "/placeholder.svg"}
+                      width={16}
+                      height={16}
+                      alt={`${skill.icon} logo`}
+                      className="w-full h-full object-contain p-1"
+                    />
                   </div>
+                </div>
                 <span className="skill-name">{skill.name}</span>
               </div>
             ))}
@@ -109,22 +95,22 @@ export function SkillsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-semibold text-primary mb-6 border-b border-blue-500/30 pb-2">
-                Deploiement
+                Deployement
               </h3>
               <div className="grid grid-cols-1 gap-6">
                 {deploymentSkills.map((skill, index) => (
                   <div key={index} className="skill-card">
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={skill.icon || "/placeholder.svg"}
-                        width={16}
-                        height={16}
-                        alt={`${skill.icon} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
+                    <div className="skill-icon" style={{ color: skill.color }}>
+                      <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
+                        <Image
+                          src={skill.icon || "/placeholder.svg"}
+                          width={16}
+                          height={16}
+                          alt={`${skill.icon} logo`}
+                          className="w-full h-full object-contain p-1"
+                        />
+                      </div>
                     </div>
-                  </div>
                     <span className="skill-name">{skill.name}</span>
                   </div>
                 ))}
@@ -136,17 +122,17 @@ export function SkillsSection() {
               <div className="grid grid-cols-1 gap-6">
                 {otherSkills.map((skill, index) => (
                   <div key={index} className="skill-card">
-                  <div className="skill-icon" style={{ color: skill.color }}>
-                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={skill.icon || "/placeholder.svg"}
-                        width={16}
-                        height={16}
-                        alt={`${skill.icon} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
+                    <div className="skill-icon" style={{ color: skill.color }}>
+                      <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 border group-hover:scale-110 transition-transform duration-300">
+                        <Image
+                          src={skill.icon || "/placeholder.svg"}
+                          width={16}
+                          height={16}
+                          alt={`${skill.icon} logo`}
+                          className="w-full h-full object-contain p-1"
+                        />
+                      </div>
                     </div>
-                  </div>  
                     <span className="skill-name">{skill.name}</span>
                   </div>
                 ))}
