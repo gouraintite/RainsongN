@@ -42,7 +42,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <p className="text-muted-foreground">linkedin.com/in/ryan-ganger</p>
+                  <p className="text-muted-foreground">linkedin.com/in/Rainsong-ganger</p>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Twitter</p>
-                  <p className="text-muted-foreground">@ryan_ganger</p>
+                  <p className="text-muted-foreground">@Rainsong_ganger</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">GitHub</p>
-                  <p className="text-muted-foreground">github.com/ryan-ganger</p>
+                  <p className="text-muted-foreground">github.com/Rainsong-ganger</p>
                 </div>
               </div>
             </div>

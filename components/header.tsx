@@ -30,7 +30,7 @@ export function Header() {
             <div className="w-auto h-auto rounded-full flex items-center justify-center">
               <Image
                   src="/logo.png"
-                  alt="Ryan Ganger"
+                  alt="Rainsong Ngoutsop"
                   width={600}
                   height={300}
                   className="w-full h-full object-cover"

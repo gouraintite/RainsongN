@@ -78,7 +78,7 @@ export function HeroSection() {
               <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden border-4 border-primary/20 animate-float">
                 <Image
                   src="/professional-developer-portrait.jpg"
-                  alt="Ryan Ganger"
+                  alt="Rainsong Ngoutsop"
                   width={400}
                   height={600}
                   className="w-full h-full object-cover"
