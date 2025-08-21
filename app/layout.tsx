@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Rainsong Ngoutsop - Software Engineer",
+    title: "Rainsong Ngoutsop | Software Engineer",
     description:
       "Professional portfolio of Rainsong Ngoutsop, a software engineer with expertise in React.js, TypeScript, and modern web technologies.",
-    url: "https://rainsong-portfolio.vercel.app",
+    url: "https://rainsong-n.vercel.app",
     siteName: "Rainsong Ngoutsop",
     images: [
       {
